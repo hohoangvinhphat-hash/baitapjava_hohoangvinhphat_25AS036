@@ -8,7 +8,6 @@ public class TestMain {
 
         System.out.println(e1);
 
-
         System.out.println("Name: " + e1.getName());
 
 
