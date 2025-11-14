@@ -1,19 +1,16 @@
 package baitap18;
 
 public class Time {
-    // Thuộc tính
     private int hour;
     private int minute;
     private int second;
 
-    // Constructor
     public Time(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
 
-    // Getter
     public int getHour() {
         return hour;
     }
@@ -26,7 +23,6 @@ public class Time {
         return second;
     }
 
-    // Setter
     public void setHour(int hour) {
         this.hour = hour;
     }
@@ -45,12 +41,10 @@ public class Time {
         this.second = second;
     }
 
-    // toString: định dạng hh:mm:ss với số 0 phía trước
     public String toString() {
         return String.format("%02d:%02d:%02d", hour, minute, second);
     }
 
-    // Tăng 1 giây
     public Time nextSecond() {
         second++;
         if (second >= 60) {
@@ -67,7 +61,6 @@ public class Time {
         return this;
     }
 
-    // Giảm 1 giây
     public Time previousSecond() {
         second--;
         if (second < 0) {
